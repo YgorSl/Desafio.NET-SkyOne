@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32901.215
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Desafio.NET", "Desafio.NET\Desafio.NET.csproj", "{EDDF36EB-5915-4523-93FA-83A76952AF35}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Desafio1.NET", "Desafio.NET\Desafio1.NET.csproj", "{EDDF36EB-5915-4523-93FA-83A76952AF35}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
