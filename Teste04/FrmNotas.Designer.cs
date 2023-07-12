@@ -41,6 +41,9 @@
             this.lblAvisoNota1 = new System.Windows.Forms.Label();
             this.lblAvisoNome = new System.Windows.Forms.Label();
             this.lblAvisoNota2 = new System.Windows.Forms.Label();
+            this.lblAvisoAno = new System.Windows.Forms.Label();
+            this.lblAno = new System.Windows.Forms.Label();
+            this.txtAno = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // txtAluno
@@ -88,7 +91,7 @@
             // lbl2Sem
             // 
             this.lbl2Sem.AutoSize = true;
-            this.lbl2Sem.Location = new System.Drawing.Point(234, 180);
+            this.lbl2Sem.Location = new System.Drawing.Point(166, 180);
             this.lbl2Sem.Name = "lbl2Sem";
             this.lbl2Sem.Size = new System.Drawing.Size(115, 15);
             this.lbl2Sem.TabIndex = 6;
@@ -96,7 +99,7 @@
             // 
             // txt2Sem
             // 
-            this.txt2Sem.Location = new System.Drawing.Point(232, 198);
+            this.txt2Sem.Location = new System.Drawing.Point(164, 198);
             this.txt2Sem.Name = "txt2Sem";
             this.txt2Sem.Size = new System.Drawing.Size(115, 23);
             this.txt2Sem.TabIndex = 5;
@@ -156,18 +159,49 @@
             // 
             this.lblAvisoNota2.AutoSize = true;
             this.lblAvisoNota2.ForeColor = System.Drawing.Color.Red;
-            this.lblAvisoNota2.Location = new System.Drawing.Point(234, 224);
+            this.lblAvisoNota2.Location = new System.Drawing.Point(166, 224);
             this.lblAvisoNota2.Name = "lblAvisoNota2";
             this.lblAvisoNota2.Size = new System.Drawing.Size(110, 15);
             this.lblAvisoNota2.TabIndex = 12;
             this.lblAvisoNota2.Text = "Campo Obrigatório";
             this.lblAvisoNota2.Visible = false;
             // 
+            // lblAvisoAno
+            // 
+            this.lblAvisoAno.AutoSize = true;
+            this.lblAvisoAno.ForeColor = System.Drawing.Color.Red;
+            this.lblAvisoAno.Location = new System.Drawing.Point(287, 224);
+            this.lblAvisoAno.Name = "lblAvisoAno";
+            this.lblAvisoAno.Size = new System.Drawing.Size(110, 15);
+            this.lblAvisoAno.TabIndex = 15;
+            this.lblAvisoAno.Text = "Campo Obrigatório";
+            this.lblAvisoAno.Visible = false;
+            // 
+            // lblAno
+            // 
+            this.lblAno.AutoSize = true;
+            this.lblAno.Location = new System.Drawing.Point(287, 180);
+            this.lblAno.Name = "lblAno";
+            this.lblAno.Size = new System.Drawing.Size(29, 15);
+            this.lblAno.TabIndex = 14;
+            this.lblAno.Text = "Ano";
+            this.lblAno.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // txtAno
+            // 
+            this.txtAno.Location = new System.Drawing.Point(285, 198);
+            this.txtAno.Name = "txtAno";
+            this.txtAno.Size = new System.Drawing.Size(115, 23);
+            this.txtAno.TabIndex = 13;
+            // 
             // FrmNotas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(395, 450);
+            this.ClientSize = new System.Drawing.Size(408, 450);
+            this.Controls.Add(this.lblAvisoAno);
+            this.Controls.Add(this.lblAno);
+            this.Controls.Add(this.txtAno);
             this.Controls.Add(this.lblAvisoNota2);
             this.Controls.Add(this.lblAvisoNome);
             this.Controls.Add(this.lblAvisoNota1);
@@ -203,5 +237,8 @@
         private Label lblAvisoNota1;
         private Label lblAvisoNome;
         private Label lblAvisoNota2;
+        private Label lblAvisoAno;
+        private Label lblAno;
+        private TextBox txtAno;
     }
 }
